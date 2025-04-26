@@ -16,6 +16,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+
 Route::get('/cars',[CarsController::class, 'index']);
 
 require __DIR__.'/settings.php';
