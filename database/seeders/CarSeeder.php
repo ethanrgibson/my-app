@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class CarSeeder extends Seeder
 {
@@ -12,7 +13,7 @@ class CarSeeder extends Seeder
      */
     public function run(): void
     {
-        Db::table('cars')->insert([
+        DB::table('cars')->insert([
             'make'=>'toyota',
             'model'=>'tacoma',
             'description'=>'Love my coma, never want another car ever!',

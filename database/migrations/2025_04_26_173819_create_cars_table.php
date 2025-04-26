@@ -16,7 +16,7 @@ return new class extends Migration
             $table->timestamps();
             $table->string('make');
             $table->string('model');
-            $table->text('decription');
+            $table->text('description');
             $table->integer('price');
             $table->string('img_url');
             $table->integer('year');
