@@ -3,6 +3,8 @@ import axios from 'axios';
 import { onMounted } from 'vue';
 
 
+
+
 onMounted(() =>
   getAllCars()
 )
@@ -10,8 +12,9 @@ onMounted(() =>
 async function getAllCars() {
 
   try {
-    const response = await axios.get('http://my-app.test/api/cars');
-    console.log(response.data);
+    await carsService.getAllCars()
+    // // const response = await axios.get('http://my-app.test/api/cars');
+    // console.log(response.data);
 
   } catch (error) {
     console.log(error)
