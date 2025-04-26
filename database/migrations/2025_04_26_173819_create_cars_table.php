@@ -18,9 +18,9 @@ return new class extends Migration
             $table->string('model');
             $table->text('decription');
             $table->integer('price');
-            $table->string('imgUrl');
+            $table->string('img_url');
             $table->integer('year');
-            $table->boolean('isPublished');
+            $table->boolean('is_published');
         
         });
     }
