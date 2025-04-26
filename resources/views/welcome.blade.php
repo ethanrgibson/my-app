@@ -7,7 +7,7 @@
 </head>
 <body>
     <div id="app">
-<HelloWorld />
+        <hello-world></hello-world>
     </div>
 </body>
 </html>
