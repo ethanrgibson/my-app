@@ -18,13 +18,6 @@ Route::get('/', function () {
 });
 
 
-Route::get('api/cars', function (Request $request) {
-   $cars = Cars::all();
-   return response()->json($cars);
-});
-
-
-
 Route::get('/api/cars',[CarsController::class, 'index']);
 
 require __DIR__.'/settings.php';

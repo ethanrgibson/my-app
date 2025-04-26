@@ -1,4 +1,25 @@
 <script setup lang="ts">
+import axios from 'axios';
+import { onMounted } from 'vue';
+
+
+onMounted(() =>
+  getAllCars()
+)
+
+async function getAllCars() {
+
+  try {
+    const response = await axios.get('http://my-app.test/api/cars');
+    console.log(response.data);
+
+  } catch (error) {
+    console.log(error)
+  }
+
+
+}
+
 
 </script>
 
@@ -25,6 +46,6 @@
 .bg-image {
 
   min-height: 40dvh;
-  object-position: bottom;
+  background-position: center;
 }
 </style>
