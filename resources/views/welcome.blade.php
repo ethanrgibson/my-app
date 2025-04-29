@@ -9,6 +9,9 @@
     <div id="app">
         <hello-world></hello-world>
     </div>
+
+    <div id="app"></div>
+
 </body>
 </html>
 
