@@ -12,9 +12,9 @@ onMounted(() =>
 async function getAllCars() {
 
   try {
-    await carsService.getAllCars()
-    // // const response = await axios.get('http://my-app.test/api/cars');
-    // console.log(response.data);
+
+    const response = await axios.get('http://my-app.test/api/cars');
+    console.log(response.data);
 
   } catch (error) {
     console.log(error)
